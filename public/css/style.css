@@ -1,0 +1,42 @@
+.check-ed:checked ~ .checkmark {
+    background-color: #25DAC5;
+    border-color: #25DAC5;
+}
+
+.checkmark::before{
+    content: "";
+    position: absolute;
+    display: none;
+    left: 5px;
+    top: 1.5px;
+    width: 6px;
+    height: 12px;
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+.check-ed:checked ~ .checkmark::before{
+    display: block;
+}
+
+.middle-line {
+    display: flex;
+    flex-direction: row;
+  }
+  .middle-line:before, .middle-line:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid;
+    margin: auto;
+  }
+  .middle-line:before {
+    margin-right: 10px
+  }
+  .middle-line:after {
+    margin-left: 10px
+  }

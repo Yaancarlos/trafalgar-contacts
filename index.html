@@ -5,10 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Startup App - Contacts Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./public/css/output.css">
+    <link rel="stylesheet" href="./public/css/style.css">
 </head>
 <body>
-    <div class="bg-center bg-cover text-center bg-blend-soft-light text-white px-5 py-7 sm:px-10 sm:py-14 md:px-14 md:py-16 lg:px-18 xl:px-24 lg:py-20 bg-no-repeat w-full h-auto" style="background-image:linear-gradient(#2e18939b,#2e189393), url(./public/img/contacts-bg-1.png);">
+    <div class="bg-center bg-cover text-center bg-blend-soft-light text-white px-5 py-7 sm:px-10 sm:py-14 md:px-14 md:py-16 lg:px-18 xl:px-24 lg:py-20 bg-no-repeat w-full h-auto" style="background-image:linear-gradient(#2e18939b,#2e189393), url(./public/img/contacts-bg-3.png);">
+        <div class="max-w-4xl mx-auto lg:px-24 md:px-18">
+            <h1 class="font-medium md:font-bold text-xl sm:text-2xl md:text-4xl lg:text-5xl">Let's Talk</h1>
+            <form method="" action="" class="mt-10 flex gap-5 flex-col">
+                <div class="grid gap-5 grid-cols-1 sm:grid-cols-2 grid-rows-2 sm:grid-rows-1 md:gap-7">
+                    <input type="text" placeholder="Your name" required class="w-full py-2.5 border-2 border-solid border-white/[.7] bg-transparent rounded-full px-4">
+                    <input type="email" placeholder="Your email" required class="w-full py-2.5 border-2 border-solid border-white/[.7] bg-transparent rounded-full px-4">
+                </div>
+                <textarea name="" id="" required placeholder="Your message" class="border-2 border-solid bg-transparent border-white/[.7] h-36 md:max-h-40 md:min-h-[159.9px] md:h-40 rounded-lg py-2.5 px-5  w-full"></textarea>
+                <div class="inline-flex w-full gap-5 flex-col sm:flex-row items-start sm:items-center justify-between">
+                    <label for="contacts-1" class="relative font-normal text-sm pl-7 sm:text-base"> Send me a copy
+                        <input type="checkbox" id="contacts-1" class="check-ed absolute opacity-0 w-0 h-0 top-0 left-0">
+                        <span class="checkmark w-5 h-5 bg-transparent border-solid border-white/[.7] rounded-md absolute left-0 top-0 sm:top-0.5 border-2"></span>
+                    </label>
+                    <button class="bg-rose-500 hover:bg-[#25DAC5] transition-colors w-full sm:w-auto px-7 py-2 rounded-full">Send a Message</button>
+                </div>
+                <h1 class="tracking-widest text-xs sm:text-sm middle-line mt-10 font-medium">OR CALL US</h1>
+                <span class="text-sm sm:text-base md:text-lg lg:text-xl font-normal md:font-medium">+1 555 505 5050</span>
+            </form>
+        </div>
+    </div>
+    <div class="w-full h-12 bg-gray-200"></div>
+    <div class="px-5 py-7 bg-white text-center sm:px-10 sm:py-14 md:px-14 md:py-16 lg:px-18 xl:px-26 2xl:px-48 lg:py-20 w-full h-auto">
+        <span class="tracking-widest text-xs sm:text-sm text-gray-400 font-medium md:font-bold">GET STARTED</span>
+        <h1 class="font-medium text-violet md:font-bold text-xl mb-8 sm:text-2xl md:text-4xl lg:text-5xl">Get in Touch with Us</h1>
+        <form method="" action="" class="max-w-2xl mx-auto">
+            <textarea name="" id="" required placeholder="Your message" class="border-2 border-solid bg-transparent border-gray-300 h-36 md:max-h-40 md:min-h-[159.9px] md:h-40 rounded-lg py-2.5 px-5  w-full"></textarea>
+            <div class="flex mt-5 flex-col sm:flex-row gap-5">
+                <input type="email" name="" autocomplete="email" required placeholder="Your email" class="grow py-2.5 border-2 border-solid border-gray-300 bg-transparent rounded-full px-4" id="">
+                <button type="submit" class="bg-emerald px-12 hover:bg-page transition-colors py-2 text-white rounded-full grow sm:grow-0">Send</button>
+            </div>
+        </form>
+        <div class="grid grid-cols-2 mt-16 grid-rows-2 sm:grid-rows-1 gap-5 lg:gap-18 sm:grid-cols-3">
+             <div class="lg:px-14">
+                <h3 class="text-violet mb-2 tracking-widest text-xs sm:text-sm font-medium lg:font-bold">NEW YORK. NY</h3>
+                <p class="text-gray-400 text-sm sm:text-base font-normal">62 West 55th Street, Suite 302 New York, NY, 10230</p>
+             </div>
+             <div class="lg:px-14">
+                <h3 class="text-violet mb-2 tracking-widest text-xs sm:text-sm font-medium lg:font-bold">SAN FRANCISCO. CA</h3>
+                <p class="text-gray-400 text-sm sm:text-base font-normal">560 Judah St & 15th Ave, Apt. 5 San Francisco, CA, 230903</p>
+             </div>
+             <div class="col-start-1 col-end-3 sm:col-auto lg:px-14">
+                <h3 class="text-violet mb-2 tracking-widest text-xs sm:text-sm font-medium lg:font-bold">DUBAI</h3>
+                <p class="text-gray-400 text-sm sm:text-base font-normal">U237-02, Gold Tower, Jumeirah Lakes Towers, Dubai, UAE</p>
+             </div>
+        </div>
+    </div>
+    <div class="w-full h-12 bg-gray-200"></div>
+    <div class="bg-center bg-cover text-center bg-blend-soft-light text-white px-5 py-7 sm:px-10 sm:py-14 md:px-14 md:py-16 lg:px-18 xl:px-24 lg:py-20 bg-no-repeat w-full h-auto" style="background-image:linear-gradient(#2e18939b,#2e189393), url(./public/img/contacts-bg-3.png);">
         <div class="max-w-4xl mx-auto lg:px-24 md:px-18">
             <h1 class="font-medium md:font-bold text-xl sm:text-2xl md:text-4xl lg:text-5xl">Drop Us a Line</h1>
             <p class="text-sm sm:text-base md:text-lg lg:text-xl mt-5 font-normal md:font-medium">We have created a new product that will help designers, developers and companies create websites for their startups quickly and easily.</p>
@@ -20,10 +70,43 @@
                     </div>
                     <textarea name="" id="" placeholder="Your message" class="py-2.5 px-4 border-2 border-solid bg-transparent h-36 max-h-[116.9px] min-h-[115.9px] sm:h-auto rounded-lg border-white/[.7] w-full flex-auto"></textarea>
                 </div>
-                <button class="bg-[#25DAC5] transition-colors w-full sm:w-auto rounded-full mt-16 px-7 py-2.5 hover:bg-rose-500">Let's Talk</button>
+                <button type="submit" class="bg-[#25DAC5] transition-colors w-full sm:w-auto rounded-full mt-16 px-7 py-2.5 hover:bg-rose-500">Let's Talk</button>
             </form>
         </div>
     </div>
     <div class="w-full h-12 bg-gray-200"></div>
+    <div class="bg-center bg-cover bg-blend-soft-light text-white px-5 py-7 sm:px-10 sm:py-14 md:px-14 md:py-16 lg:px-18 xl:px-24 lg:py-20 xl:py-28 bg-no-repeat w-full h-auto" style="background-image:linear-gradient(#2e18939b,#2e189393), url(./public/img/contacts-bg-4.png);">
+        <div class="flex flex-col gap-10 md:flex-row">
+            <div class="max-w-sm flex-col inline-flex">
+                <h1 class="font-medium md:font-bold text-xl sm:text-2xl md:text-4xl">Let's keep in Touch</h1>
+                <p class="text-sm sm:text-base md:text-lg lg:text-xl mt-5 font-normal md:font-medium">We have created a new product that will help designers, developers and companies create websites for their startups quickly and easily.</p>
+                <div class="mt-10">
+                    <i class="bi mr-2 bi-telephone-fill"></i>
+                    <span class="text-sm font-normal sm:text-base">+1 555 505 5050</span>
+                </div>
+                <div class="my-10">
+                    <i class="bi mr-2 bi-envelope-fill"></i>
+                    <span class="text-sm font-normal sm:text-base">info@designmodo.com</span>
+                </div>
+                <div class="inline-flex">
+                    <i class="bi mr-2 bi-building"></i>
+                    <span class="text-sm font-normal max-w-[252px] block sm:text-base">San Francisco, CA560 Bush St & 20th Ave, Apt5 San Francisco, 230909</span>
+                </div>
+            </div>
+            <div class="max-w-[470px] h-full w-full rounded-lg bg-white px-8 py-11">
+                <div class="flex flex-col gap-7">
+                    <div class="inline-flex gap-7 w-full">
+                        <input type="text" name="" placeholder="First name" class="grow px-5 py-2 border-2 border-solid border-gray-300 rounded-full bg-transparent" id="">
+                        <label for="ctcs-4" class="text-violet text-xs sm:text-sm font-medium md:font-bold tracking-widest">BUDGET</label>
+                        <select name="" class="text-violet border-2 border-solid border-gray-300 rounded-full text-sm sm:text-base md:text-lg" id="ctcs-4">
+                            <option value="">$500</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-full h-12 bg-gray-200"></div>
+
 </body>
 </html>
