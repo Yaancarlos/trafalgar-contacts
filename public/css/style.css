@@ -1,9 +1,18 @@
-.check-ed:checked ~ .checkmark {
+.check-ed:checked ~ .checkmark,
+.check-ed:checked ~ .checkmark-2 {
     background-color: #25DAC5;
     border-color: #25DAC5;
 }
 
-.checkmark::before{
+.checkmark::before {
+  border: solid #fff;
+}
+.checkmark-2::before{
+  border: solid #212529;
+}
+
+.checkmark::before,
+.checkmark-2::before{
     content: "";
     position: absolute;
     display: none;
@@ -11,7 +20,7 @@
     top: 1.5px;
     width: 6px;
     height: 12px;
-    border: solid #fff;
+/*     border: solid #fff; */
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
@@ -20,7 +29,8 @@
     -o-transform: rotate(45deg);
 }
 
-.check-ed:checked ~ .checkmark::before{
+.check-ed:checked ~ .checkmark::before,
+.check-ed:checked ~ .checkmark-2::before{
     display: block;
 }
 
@@ -40,3 +50,4 @@
   .middle-line:after {
     margin-left: 10px
   }
+
